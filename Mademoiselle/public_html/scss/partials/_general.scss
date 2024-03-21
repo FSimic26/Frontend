@@ -1,0 +1,56 @@
+img{
+    max-width: 100%;
+}
+
+body{
+    font-family: $body-font;
+    font-weight: 300;
+}
+
+.section-title{
+    font-size: 3rem;
+    line-height: 4.5rem;
+    letter-spacing: 0.5rem;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 4.6rem;
+    font-family: $bodoni;
+}
+
+.section-title:after{
+    content: "";
+    width: 74px;
+    display: block;
+    height: 2px;
+    background-color: #ECD9D9;
+    margin-top: 2.5rem;
+}
+
+.btn-pink{
+    border: 1px solid $body-color;
+    padding: 1.5rem 3.6rem;
+    transition: 0.2s linear;
+    font-size: 1.4rem;
+    letter-spacing: 0.5px;
+
+    &:hover{
+        background-color: #fff;
+        border-color: #000;
+    }
+}
+
+.btn-error{
+    border: 1px solid #fff;
+    padding: 1.5rem 3.6rem;
+    transition: 0.2s linear;
+    font-size: 1.4rem;
+    letter-spacing: 0.5px;
+    color: #fff;
+    &:hover{
+        background-color: $primary;
+        border-color: #000;
+    }
+}
+
+
+

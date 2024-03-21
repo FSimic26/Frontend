@@ -1,0 +1,42 @@
+.trends-section{
+    margin-bottom: 5rem;
+    @media(min-width:992px){
+        margin-bottom: 7rem;
+    }
+    .trends-content{
+        a{
+            display: block;
+        }
+        .trends-content-info{
+            max-width: 90%;
+            max-width: 300px;
+            margin: 0 auto;
+            margin-top: -90px;
+            background-color: #fff;
+            position: relative;
+            z-index: 5000;
+            text-align: center;
+            p{
+                font-size: 1.4rem;
+                line-height: 1.7rem;
+                letter-spacing: 1px;
+                padding-top: 2.5rem;
+                margin-bottom: 2rem;
+                font-family: $bodoni;
+                font-style: italic;
+            }
+            h2{
+                a{
+                    font-size: 1.6rem;
+                    line-height: 2.4rem;
+                    padding: 0 18px 60px 19px;
+                    color: #1e1e1e !important;
+                    text-transform: uppercase;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
+
+/*URADITI AFTER ZA NASLOV*/

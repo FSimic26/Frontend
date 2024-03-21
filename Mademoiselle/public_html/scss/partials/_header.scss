@@ -1,0 +1,87 @@
+header{
+    .navbar-brand{
+        max-width: 226px;
+        img{
+            display: block;
+        }
+    }
+    
+    .navbar-toggler{
+        outline: none !important;
+        box-shadow: none !important;
+    }
+    .navbar-nav{
+        border-bottom: 1px solid $primary;
+        @media(min-width:992px){
+            border-bottom: none;
+        }
+        .nav-item{
+            &:not(:last-of-type){
+                border-bottom: 1px solid $primary;
+                @media(min-width:992px){
+                    border-bottom: none;
+                    margin-right: 72px;
+                }
+            }
+            
+            @media(min-width:992px){
+                position: relative;
+                &:hover{
+                    .submenu{
+                        opacity: 1;
+                        transform: rotateX(0) perspective(1000px);
+                    }
+                }
+            }
+            .nav-link{
+                font-weight: 400;
+                font-size: 1.4rem;
+                line-height: 1.7rem;
+                text-transform: uppercase;
+                padding: 10px;
+                position: relative;
+                transition: 0.5s linear;
+                .toggle-submenu{
+                    position: absolute;
+                    top:0;
+                    right:0;
+                    width: 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100%;
+                    @media(min-width:992px){
+                        display: none;
+                    }
+                }
+            }
+            .nav-link.active{
+                border-bottom: 1px solid #ECD9D9;
+            }
+            
+            
+            .submenu{
+                padding-left: 20px;
+                display: none;
+                transition: 0.5s linear;
+                @media(min-width:992px){
+                    display: block !important;
+                    transform:rotateX(-90deg);
+                    transform-origin: 0 0;
+                    opacity: 0;
+                    position: absolute;
+                    top:100%;
+                    left: 0;
+                    padding-left: 0px;
+                    text-align: start !important;
+                    
+                }
+                .nav-link{
+                    @media(min-width:992px){
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+    }
+}

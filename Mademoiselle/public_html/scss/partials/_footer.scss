@@ -1,0 +1,19 @@
+.container{
+    text-align: center;
+    .social{
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+        a{
+            margin-right: 3rem;
+            &:nth-child(3n+3){
+                margin-right: 0;
+            } 
+        }
+    }
+    .copyright{
+        font-weight: 400;
+        font-size: 1.2rem;
+        line-height: 4.1rem;
+        letter-spacing: 0.17px;
+    }
+}

@@ -1,0 +1,39 @@
+.team-section{
+    margin-bottom: 8rem;
+    @media(min-width:992px){
+        margin-bottom: 11.3rem;
+    }
+    .team-wrapper{
+        padding: 34px 15px 34px 15px;
+        border: 1px solid $primary;
+        @media(min-width:992px){
+            padding: 64px 25px 64px 25px;
+        }
+        .team-slider-item-img{
+            margin-bottom: 5rem;
+            @media(min-width:768px){
+                margin-bottom: 0;
+            }
+        }
+        .team-slider-item-desc{
+            h3{
+                font-size: 2rem;
+                line-height: 1.7rem;
+                letter-spacing: normal;
+                text-align: left;
+                margin-bottom: 2rem;
+                @media(min-width:992px){
+                    font-size: 3rem;
+                    line-height: 2.7rem;
+                    margin-bottom: 3rem;
+                }
+            }
+            p{
+                font-size: 1.6rem;
+                line-height: 2.3rem;
+                letter-spacing: normal;
+                text-align: left;
+            }
+        }
+    }
+}
